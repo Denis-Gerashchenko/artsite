@@ -1,0 +1,41 @@
+from django.db import models
+from django.urls import reverse
+
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    overview = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    content = models.TextField()
+    thumbnail = models.ImageField()
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={
+            'id': self.id
+        })
+
+
+class Drawing(models.Model):
+    title = models.CharField(max_length=100)
+    overview = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    date = models.TextField()
+    size = models.TextField()
+    aditional = models.TextField()
+    sold = models.BooleanField(null=True)
+    tags = models.TextField()
+    materials = models.TextField()
+    attributes = models.TextField()
+    price = models.TextField()
+    shops = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={
+            'id': self.id
+        })
