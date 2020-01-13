@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
        <!-- blog-area start -->
         <div class="blog-details-area bg-1">
@@ -9,7 +10,7 @@
                             <div class="col-xs-12">
                                 <div class="blog-wrap">
                                     <div class="blog-img">
-                                        <img src="assets/images/blog/1.png" alt="">
+                                        <img src="{% static 'assets/images/blog/1.png' %}" alt="">
                                     </div>
                                     <div class="blog-content">
                                         <ul class="blog-meta">
@@ -86,7 +87,7 @@
                                 <ul>
                                     <li>
                                         <div class="post-img">
-                                            <img src="assets/images/post/1.jpg" alt="">
+                                            <img src="{% static 'assets/images/post/1.jpg' %}" alt="">
                                         </div>
                                         <div class="post-content">
                                             <a href="#">Vivamus ut mauris a dui fringilla mattis a sit amet lectus.</a>
@@ -95,7 +96,7 @@
                                     </li>
                                     <li>
                                         <div class="post-img">
-                                            <img src="assets/images/post/2.jpg" alt="">
+                                            <img src="{% static 'assets/images/post/2.jpg' %}" alt="">
                                         </div>
                                         <div class="post-content">
                                             <a href="#">Nam lacus dolor, egestas eget ultrices sed, congue eget lorem.</a>
@@ -104,7 +105,7 @@
                                     </li>
                                     <li>
                                         <div class="post-img">
-                                            <img src="assets/images/post/3.jpg" alt="">
+                                            <img src="{% static 'assets/images/post/3.jpg' %}" alt="">
                                         </div>
                                         <div class="post-content">
                                             <a href="#">Mauris vel ullamcorper mauris, eu faucibus est.</a>

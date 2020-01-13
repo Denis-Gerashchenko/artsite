@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
         <!-- about-area start -->
         <div class="about-area ptb-130 bg-1">
             <div class="container">
@@ -25,12 +26,12 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                         <div class="row">
                             <div class="col-md-6 col-sm-12 ">
                                 <div class="about-img">
-                                    <img src="assets/images/about/1.jpg" alt="">
+                                    <img src="{% static 'assets/images/about/1.jpg' %}" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6 hidden-sm">
                                 <div class="about-img">
-                                    <img src="assets/images/about/2.jpg" alt="">
+                                    <img src="{% static 'assets/images/about/2.jpg' %}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     </div>
                     <div class="col-md-4 hidden-sm col-xs-12">
                         <div class="wedo-img">
-                            <img src="assets/images/wedo.png" alt="">
+                            <img src="{% static 'assets/images/wedo.png' %}" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -145,64 +146,64 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                 <div class="row grid">
                     <div class="col-2  cat3 cat2 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/1.jpg" alt="">
-                            <a href="assets/images/project/1.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/1.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/1.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat2 cat3 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/2.jpg" alt="">
-                            <a href="assets/images/project/2.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/2.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/2.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat1 cat2 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/3.jpg" alt="">
-                            <a href="assets/images/project/3.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/3.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/3.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat3 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/4.jpg" alt="">
-                            <a href="assets/images/project/4.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/4.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/4.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat2 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/5.jpg" alt="">
-                            <a href="assets/images/project/5.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/5.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/5.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat1 cat3 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/6.jpg" alt="">
-                            <a href="assets/images/project/6.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/6.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/6.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat3 cat1 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/7.jpg" alt="">
-                            <a href="assets/images/project/7.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/7.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/7.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-2 col-lg-3 cat1 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="assets/images/project/8.jpg" alt="">
-                            <a href="assets/images/project/8.jpg" class="popup">
+                            <img src="{% static 'assets/images/project/8.jpg' %}" alt="">
+                            <a href="{% static 'assets/images/project/8.jpg' %}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -228,7 +229,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="team-wrap">
                             <div class="team-img">
-                                <img src="assets/images/team/1.jpg" alt="">
+                                <img src="{% static 'assets/images/team/1.jpg' %}" alt="">
                                 <div class="team-icon">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -253,7 +254,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="team-wrap">
                             <div class="team-img">
-                                <img src="assets/images/team/2.jpg" alt="">
+                                <img src="{% static 'assets/images/team/2.jpg' %}" alt="">
                                 <div class="team-icon">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -278,7 +279,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="team-wrap">
                             <div class="team-img">
-                                <img src="assets/images/team/3.jpg" alt="">
+                                <img src="{% static 'assets/images/team/3.jpg' %}" alt="">
                                 <div class="team-icon">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -303,7 +304,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="team-wrap">
                             <div class="team-img">
-                                <img src="assets/images/team/4.jpg" alt="">
+                                <img src="{% static 'assets/images/team/4.jpg' %}" alt="">
                                 <div class="team-icon">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -331,7 +332,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
         <!-- team-area end -->
 
         <!-- discount-area start -->
-        <div class="discount-area parallax black-opacity"  data-speed="5" data-bg-image="assets/images/bg/5.jpg">
+        <div class="discount-area parallax black-opacity"  data-speed="5" data-bg-image="{% static 'assets/images/bg/5.jpg' %}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
@@ -492,7 +493,7 @@ In volutpat in metus sit amet porta.</p>
                     </div>
                     <div class="col-md-5 col-md-offset-1 hidden-sm hidden-xs">
                         <div class="booknow-img">
-                            <img src="assets/images/img1.png" alt="">
+                            <img src="{% static 'assets/images/img1.png' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -516,7 +517,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="blog-wrap">
                             <div class="blog-img">
-                                <img src="assets/images/blog/1.png" alt="">
+                                <img src="{% static 'assets/images/blog/1.png' %}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
@@ -533,7 +534,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="blog-wrap">
                             <div class="blog-img">
-                                <img src="assets/images/blog/2.png" alt="">
+                                <img src="{% static 'assets/images/blog/2.png' %}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
@@ -550,7 +551,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="blog-wrap">
                             <div class="blog-img">
-                                <img src="assets/images/blog/3.png" alt="">
+                                <img src="{% static 'assets/images/blog/3.png' %}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
@@ -567,7 +568,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-2 col-md-3 col-sm-6 col-xs-12">
                         <div class="blog-wrap">
                             <div class="blog-img">
-                                <img src="assets/images/blog/4.png" alt="">
+                                <img src="{% static 'assets/images/blog/4.png' %}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
