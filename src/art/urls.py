@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from .views import (index, gallery, details, events, contact, about)
+from .views import (index, gallery, details, post_details, events, contact, about)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -13,6 +13,7 @@ urlpatterns = [
     path('events', events),
     path('contact', contact),
     path('about', about),
+    path('post_details', post_details),
 ]
 
 if settings.DEBUG:

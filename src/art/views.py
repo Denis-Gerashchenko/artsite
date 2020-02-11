@@ -13,6 +13,10 @@ def details(request):
     return render(request, 'details.html', {})
 
 
+def post_details(request):
+    return render(request, 'post-details.html', {})
+
+
 def events(request):
     return render(request, 'events.html', {})
 

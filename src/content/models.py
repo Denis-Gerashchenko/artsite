@@ -20,11 +20,11 @@ class Post(models.Model):
 
 class Drawing(models.Model):
     title = models.CharField(max_length=100)
+    thumbnail = models.ImageField(null=True, blank=True)
     overview = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     date = models.TextField()
     size = models.TextField()
-    aditional = models.TextField()
     sold = models.BooleanField(null=True)
     tags = models.TextField()
     materials = models.TextField()
@@ -39,3 +39,8 @@ class Drawing(models.Model):
         return reverse('post-detail', kwargs={
             'id': self.id
         })
+
+
+class ImageModel(models.Model):
+    mainimage = models.ImageField(upload_to='img', null=True)
+    image = models.ForeignKey(Drawing, on_delete=models.CASCADE)
