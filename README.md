@@ -1,2 +1,2 @@
 # artsite
-Website for art.
+Website for art
