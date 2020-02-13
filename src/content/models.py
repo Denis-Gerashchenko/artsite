@@ -24,11 +24,7 @@ class Drawing(models.Model):
     overview = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     date = models.TextField()
-    size = models.TextField()
     sold = models.BooleanField(null=True)
-    tags = models.TextField()
-    materials = models.TextField()
-    attributes = models.TextField()
     price = models.TextField()
     shops = models.TextField()
 

@@ -5,120 +5,48 @@
         <div class="blog-area bg-1">
             <div class="container">
                 <div class="row">
+                    {% for drawing in queryset %}
                     <div class="col-xs-12 col-md-4 col-sm-6">
                         <div class="blog-wrap">
                             <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/1.png' %}" alt="">
+                                <img src="{{ drawing.thumbnail.url }}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
+                                    <li><a href="#"><i class="fa fa-clock-o"></i>{{ drawing.timestamp }}</a></li>
                                 </ul>
-                                <h3>teger eget erat</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <h3><a href="{{ drawing.get_absolute_url }}">{{ drawing.title }}</a></h3>
+                                <p>{{ drawing.overview }}</p>
                                 <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/2.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 10</a></li>
-                                </ul>
-                                <h3>mi vehicula dapibus</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/3.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>tincidunt ante teger</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/4.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>condimentum ligula</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/3.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>tincidunt ante teger</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/1.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>teger eget erat</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                     <div class="col-xs-12">
-                        <div class="pagination-wrap text-center">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li> <span>3</span></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul>
-                        </div>
+                        {% if queryset.has_other_pages %}
+								<ul class="pagination ">
+									{% if queryset.has_previous %}
+									<li><a href="?page={{ queryset.previous_page_number }}">&laquo;</a></li>
+									{% else %}
+									<li class="disabled"><a>&laquo;</a></li>
+									{% endif %}
+									{% for i in queryset.paginator.page_range %}
+									{% if queryset.number == i %}
+									<li class="active"><a href="?page={{ i }}">{{ i }}</a></li>
+									{% else %}
+									<li><a href="?page={{ i }}">{{ i }}</a></li>
+									{% endif %}
+									{% endfor %}
+									{% if queryset.has_next %}
+									<li><a href="?page={{ queryset.next_page_number }}">&raquo;</a></li>
+									{% else %}
+									<li class="disabled"><a>&raquo;</a></li>
+									{% endif %}
+								</ul>
+								{% endif %}
                     </div>
+
                 </div>
             </div>
         </div>

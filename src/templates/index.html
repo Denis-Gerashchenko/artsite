@@ -47,77 +47,22 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="section-title text-center">
-                            <h2>Our Latest Tattoos</h2>
-                            <p> Sed vitae sem feugiat, condimentum ligula at, rhoncus purus. In volutpat in metus sit amet porta. 
-Vestibulum eget lorem vitae lectus luctus consectetur.</p>
+                            <h2>Latest Drawings</h2>
+                            <p> Exlplore recently added artworks</p>
                         </div>
                     </div>
                 </div>
                 <div class="row grid">
+                {% for drawing in queryset %}
                     <div class="col-2  cat3 cat2 project col-md-3 col-sm-6 col-xs-12">
                         <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/1.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/1.jpg' %}" class="popup">
+                            <img src="{{ drawing.thumbnail.url }}" alt="">
+                            <a href="{{ drawing.thumbnail.url }}" class="popup">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-2 col-lg-3 cat2 cat3 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/2.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/2.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat1 cat2 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/3.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/3.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat3 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/4.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/4.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat2 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/5.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/5.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat1 cat3 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/6.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/6.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat3 cat1 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/7.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/7.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 col-lg-3 cat1 project col-md-3 col-sm-6 col-xs-12">
-                        <div class="project-wrap">
-                            <img src="{% static 'assets/images/project/8.jpg' %}" alt="">
-                            <a href="{% static 'assets/images/project/8.jpg' %}" class="popup">
-                                <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
+                 {% endfor %}
                 </div>
             </div>
         </div>
@@ -130,8 +75,7 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="section-title text-center">
                             <h2>Latest News</h2>
-                            <p> Sed vitae sem feugiat, condimentum ligula at, rhoncus purus. In volutpat in metus sit amet porta. 
-Vestibulum eget lorem vitae lectus luctus consectetur.</p>
+                            <p> Explore information about current and latest events</p>
                         </div>
                     </div>
                 </div>
@@ -144,61 +88,8 @@ Vestibulum eget lorem vitae lectus luctus consectetur.</p>
                             <div class="blog-content">
                                 <ul class="blog-meta">
                                     <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
                                 </ul>
                                 <h3>teger eget erat</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2 col-md-3 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/2.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 10</a></li>
-                                </ul>
-                                <h3>mi vehicula dapibus</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2 col-md-3 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/3.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>tincidunt ante teger</h3>
-                                <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus.</p>
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2 col-md-3 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <div class="blog-img">
-                                <img src="{% static 'assets/images/blog/4.png' %}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> June, 23, 2017</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 4</a></li>
-                                </ul>
-                                <h3>condimentum ligula</h3>
                                 <p>Condimentum tincidunt ante. teger eget erat ut mi vehicula dapibus.</p>
                                 <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
                             </div>
